@@ -23,7 +23,14 @@ Mitochondrial genomes have been deposited in GenBank under accession numbers:
 
 I did phylogenetic reconstructions in a Maximum Likelihood framework (RAxML) and dated the tree with BEAST.
 
-BEAST: it is included analysis in [PartitionFinder](phylogenetic_analysis/Beast/PartitionFinder), input for BEAST elaborated in [BEAUti](phylogenetic_analysis/Beast/27_mito_Rattus.xml), runs [1](phylogenetic_analysis/Beast/run1_cipress) and [2](phylogenetic_analysis/Beast/run2_cipress), and consensus [tree](phylogenetic_analysis/Beast/27_rattus_consensus.tre).
+BEAST: the repository includes data from analysis in [PartitionFinder](phylogenetic_analysis/Beast/PartitionFinder), xml file from [BEAUti](phylogenetic_analysis/Beast/27_mito_Rattus.xml), runs [1](phylogenetic_analysis/Beast/run1_cipress) and [2](phylogenetic_analysis/Beast/run2_cipress), and consensus [tree](phylogenetic_analysis/Beast/27_rattus_consensus.tre).
+
+RAxML:  the repository includes data from analysis in  [PartitionFinder](phylogenetic_analysis/RAxML/PartitionFinder), input [alignment for RAxML](phylogenetic_analysis/RAxML/raxml/mito_all_cds.phy) with its [partitions](phylogenetic_analysis/RAxML/raxml/partitions.txt) and resulting [trees](phylogenetic_analysis/RAxML/raxml).
+
+### haplotype network
+
+The [DNA alignment](haplotype_networks/network_matrix.nex) of *cytochrome b* sequences to reconstruct the haplotype network within the *R. tiomanicus* group (*R. tiomanicus* + *R. baluensis*).
+
 
 ### selection analysis
 

@@ -72,7 +72,8 @@ phylogenetic_analysis/RAxML/raxml/*
 !phylogenetic_analysis/RAxML/raxml/partitions.txt
 !phylogenetic_analysis/RAxML/raxml/RAxML_b*
 
-
+#haplotype networks
+!haplotype_networks
 
 
 !README.md
