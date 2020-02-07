@@ -1,0 +1,151 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=57;
+	taxlabels
+	Bandicota_indica_KT029807
+	Bunomys_penitus_KY464167
+	Rattus_baluensis_B0993
+	Rattus_baluensis_BOR161
+	Rattus_baluensis_BOR201
+	Rattus_baluensis_BOR207
+	Rattus_baluensis_BOR209
+	Rattus_baluensis_BOR210
+	Rattus_baluensis_BOR212
+	Rattus_baluensis_BOR216
+	Rattus_baluensis_BOR223
+	Rattus_baluensis_BOR230
+	Rattus_baluensis_BOR326
+	Rattus_baluensis_BOR343
+	Rattus_baluensis_BOR344
+	Rattus_baluensis_BOR348
+	Rattus_baluensis_BOR354
+	Rattus_baluensis_BOR362
+	Rattus_baluensis_BOR373
+	Rattus_baluensis_BOR383
+	Rattus_baluensis_BOR384
+	Rattus_baluensis_BOR391
+	Rattus_baluensis_BOR392
+	Rattus_baluensis_BOR393
+	Rattus_baluensis_BOR398
+	Rattus_baluensis_BOR399
+	Rattus_baluensis_BOR519
+	Rattus_baluensis_BOR528
+	Rattus_baluensis_BOR529
+	Rattus_baluensis_BOR532
+	Rattus_baluensis_BOR533
+	Rattus_baluensis_BOR540
+	Rattus_baluensis_BOR548
+	Rattus_baluensis_S0903
+	Rattus_exulans_BOR577
+	Rattus_exulans_EU273711
+	Rattus_fulcipes_NC_014867
+	Rattus_hoogerwerfi_ANSP_20319
+	'Rattus_korinchi_BM_19.11.5.81'
+	Rattus_korinchi_RMNH_23151
+	Rattus_leucopus_GU570659
+	Rattus_lutreolus_GU570661
+	Rattus_niobe_KC152486
+	Rattus_nitidus_KU200226
+	Rattus_norvegicus_AJ428514
+	Rattus_praetor_NC_012461
+	Rattus_rattus_NC_012374
+	Rattus_sordidus_GU570665
+	Rattus_sp_BOR260
+	Rattus_sp_NH_2015
+	Rattus_tanezumi_EU273712
+	Rattus_tiomanicus_NH_2147
+	Rattus_tiomanicus_USNM_590332
+	Rattus_tiomanicus_USNM_590720
+	Rattus_tunneyi_NC_014861
+	Rattus_villosissimus_NC_014864
+	Sundamys_muelleri_KY464172
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((Rattus_exulans_BOR577:0.005397,Rattus_exulans_EU273711:0.011222)[&label=100]:0.237138,(Rattus_norvegicus_AJ428514:0.264054,((Bandicota_indica_KT029807:0.348163,(Sundamys_muelleri_KY464172:0.369063,Bunomys_penitus_KY464167:0.359796)[&label=99]:0.052936)[&label=100,!rotate=true]:0.040356,((Rattus_niobe_KC152486:0.088465,Rattus_praetor_NC_012461:0.100343)[&label=100]:0.032701,(Rattus_leucopus_GU570659:0.13827,(Rattus_fulcipes_NC_014867:0.149769,(Rattus_tunneyi_NC_014861:0.126504,(Rattus_lutreolus_GU570661:0.099648,(Rattus_villosissimus_NC_014864:0.058985,Rattus_sordidus_GU570665:0.054625)[&label=100]:0.036071)[&label=90]:0.011908)[&label=100]:0.044614)[&label=97]:0.017366)[&label=74]:0.013876)[&label=100,!collapse={"collapsed",0.0942773937426189},!name="Australo-Papuan Rattus"]:0.125361)[&label=99,!rotate=true]:0.034873)[&label=100,!rotate=true]:0.047896)[&label=100]:0.055267,(((((((((((Rattus_baluensis_BOR519:1.0E-6,Rattus_baluensis_BOR207:1.0E-6)[&label=6]:1.0E-6,Rattus_baluensis_BOR540:1.0E-6)[&label=3]:1.0E-6,Rattus_baluensis_BOR548:1.0E-6)[&label=5]:1.0E-6,(Rattus_baluensis_BOR528:1.0E-6,Rattus_baluensis_BOR532:1.0E-6)[&label=18]:1.0E-6)[&label=100]:9.44E-4,((Rattus_baluensis_BOR344:3.76E-4,(Rattus_baluensis_B0993:1.88E-4,(Rattus_baluensis_BOR209:1.0E-6,(((Rattus_baluensis_BOR326:5.65E-4,(((Rattus_baluensis_BOR373:1.0E-6,((Rattus_baluensis_BOR391:1.0E-6,Rattus_baluensis_BOR362:1.0E-6)[&label=35]:1.0E-6,Rattus_baluensis_BOR384:1.0E-6)[&label=85]:1.88E-4)[&label=52]:1.0E-6,(Rattus_baluensis_BOR392:1.0E-6,((Rattus_baluensis_BOR399:1.0E-6,Rattus_baluensis_BOR398:1.0E-6)[&label=21]:1.0E-6,((Rattus_baluensis_BOR343:1.0E-6,(Rattus_baluensis_BOR348:1.0E-6,Rattus_baluensis_BOR393:1.0E-6)[&label=11]:1.0E-6)[&label=5]:1.0E-6,Rattus_baluensis_BOR383:1.0E-6)[&label=5]:1.0E-6)[&label=67]:1.0E-6)[&label=89]:3.76E-4)[&label=57]:1.88E-4,Rattus_baluensis_S0903:1.0E-6)[&label=58]:1.88E-4)[&label=13]:1.0E-6,Rattus_baluensis_BOR212:1.0E-6)[&label=0]:1.0E-6,(Rattus_baluensis_BOR533:1.0E-6,(Rattus_baluensis_BOR230:1.0E-6,(Rattus_baluensis_BOR201:1.0E-6,(Rattus_baluensis_BOR210:1.0E-6,(Rattus_baluensis_BOR529:1.0E-6,(Rattus_baluensis_BOR216:1.0E-6,Rattus_baluensis_BOR223:1.0E-6)[&label=10]:1.0E-6)[&label=5]:1.0E-6)[&label=2]:1.0E-6)[&label=0]:1.0E-6)[&label=0]:1.0E-6)[&label=1]:1.0E-6)[&label=0]:1.0E-6)[&label=7]:1.0E-6)[&label=20]:1.0E-6)[&label=94]:5.65E-4,Rattus_baluensis_BOR354:5.66E-4)[&label=70]:1.0E-6)[&label=100,!collapse={"collapsed",0.12455150922857466},!name="Rattus_baluensis (n=31)"]:0.004987,Rattus_sp_NH_2015:0.008596)[&label=100]:0.003942,Rattus_baluensis_BOR161:0.009628)[&label=100]:0.01214,(Rattus_tiomanicus_USNM_590720:1.0E-6,Rattus_tiomanicus_USNM_590332:1.89E-4)[&label=100]:0.031951)[&label=100]:0.043838,Rattus_tiomanicus_NH_2147:0.072249)[&label=100]:0.025474,(Rattus_rattus_NC_012374:0.051458,(Rattus_sp_BOR260:0.013912,Rattus_tanezumi_EU273712:0.019584)[&label=100]:0.032481)[&label=100]:0.051158)[&label=100]:0.02504,(Rattus_hoogerwerfi_ANSP_20319:0.114735,('Rattus_korinchi_BM_19.11.5.81':0.039611,Rattus_korinchi_RMNH_23151:0.043461)[&label=100]:0.095069)[&label=87]:0.010972)[&label=100]:0.042661,Rattus_nitidus_KU200226:0.183571);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=9;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute="User selection";
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

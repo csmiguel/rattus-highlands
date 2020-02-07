@@ -38,6 +38,7 @@ selection_analysis/1ind_per_lineage/*
 selection_analysis/1ind_per_lineage/output/BS*
 
 #####phylogenetic-analysis#######
+#BEAST
 !phylogenetic_analysis
 phylogenetic_analysis/*
 !phylogenetic_analysis/Beast
@@ -53,6 +54,23 @@ phylogenetic_analysis/Beast/PartitionFinder/analysis/*
 !phylogenetic_analysis/Beast/PartitionFinder/analysis/best_scheme.txt
 !phylogenetic_analysis/Beast/run1_cipress
 !phylogenetic_analysis/Beast/run2_cipress
+
+#RAxML
+!phylogenetic_analysis/RAxML
+phylogenetic_analysis/RAxML/*
+!phylogenetic_analysis/RAxML/
+!phylogenetic_analysis/RAxML/PartitionFinder
+phylogenetic_analysis/RAxML/PartitionFinder/*
+!phylogenetic_analysis/RAxML/PartitionFinder/mito_all_cds.phy
+!phylogenetic_analysis/RAxML/PartitionFinder/partition_finder.cfg
+!phylogenetic_analysis/RAxML/PartitionFinder/analysis
+phylogenetic_analysis/RAxML/PartitionFinder/analysis/*
+!phylogenetic_analysis/RAxML/PartitionFinder/analysis/best_scheme.txt
+!phylogenetic_analysis/RAxML/raxml
+phylogenetic_analysis/RAxML/raxml/*
+!phylogenetic_analysis/RAxML/raxml/mito_all_cds.phy
+!phylogenetic_analysis/RAxML/raxml/partitions.txt
+!phylogenetic_analysis/RAxML/raxml/RAxML_b*
 
 
 

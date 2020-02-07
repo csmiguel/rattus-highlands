@@ -23,7 +23,7 @@ Mitochondrial genomes have been deposited in GenBank under accession numbers:
 
 I did phylogenetic reconstructions in a Maximum Likelihood framework (RAxML) and dated the tree with BEAST.
 
-Input and output files for RAxML and BEAST are available. 
+BEAST: it is included analysis in [PartitionFinder](phylogenetic_analysis/Beast/PartitionFinder), input for BEAST elaborated in [BEAUti](phylogenetic_analysis/Beast/27_mito_Rattus.xml), runs [1](phylogenetic_analysis/Beast/run1_cipress) and [2](phylogenetic_analysis/Beast/run2_cipress), and consensus [tree](phylogenetic_analysis/Beast/27_rattus_consensus.tre).
 
 ### selection analysis
 
