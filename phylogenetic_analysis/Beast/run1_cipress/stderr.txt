@@ -1,0 +1,87 @@
+cmdModule.c(567):ERROR:50: Cannot open file '/opt/modulefiles/applications/gateway-usage-reporting/1.0' for 'reading'
+Unloading compiler-dependent module mvapich2_ib/2.1
+Warning: at xsl:stylesheet on line 3 column 80 of xsl.2.4.x:
+  Running an XSLT 10 stylesheet with an XSLT 20 processor
+NOTICE : Your input file may have been altered to activate multi-threading.
+File: infile_altered.xml seed: 1492274733670 threads: 4
+Loading package MM v1.0.5
+Loading package bModelTest v1.0.3
+Loading package GEO_SPHERE v1.1.1
+Loading package phylodynamics v1.2.1
+Loading package starbeast2 v0.13.3
+Loading package BDSKY v1.3.3
+Loading package substBMA v1.2.2
+Loading package MultiTypeTree v6.3.0
+Loading package STACEY v1.2.2
+Loading package MODEL_SELECTION v1.3.4
+Loading package BEAST v2.4.5
+Loading package BEASTLabs v1.7.0
+Loading package SA v1.1.7
+Loading package BEAST_CLASSIC v1.3.0
+Loading package CA v1.2.1
+Loading package RBS v1.3.1
+Loading package STACEY v1.2.2
+Library expoTree not found in Phylodynamics lib directory...
+Trying java.library.path (set command line argument or copy to run directory
+java.lang.UnsatisfiedLinkError: no expoTree in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1865)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at beast.phylodynamics.ExactBDSIS.<clinit>(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at beast.util.AddOnManager.find(Unknown Source)
+	at beast.util.AddOnManager.find(Unknown Source)
+	at beast.util.XMLParserUtils.<clinit>(Unknown Source)
+	at beast.util.XMLParser.parseFile(Unknown Source)
+	at beast.app.BeastMCMC.parseArgs(Unknown Source)
+	at beast.app.beastapp.BeastMain.main(Unknown Source)
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 349 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 274 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 159 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 233 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 153 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 133 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 24 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 72 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 757 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 751 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 759 unique site patterns.
+  Using rescaling scheme : dynamic
+  Ignoring ambiguities in tree likelihood.
+  Ignoring character uncertainty in tree likelihood.
+  With 771 unique site patterns.
+  Using rescaling scheme : dynamic
+End likelihood: -82427.79256404102

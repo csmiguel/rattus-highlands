@@ -1,0 +1,14 @@
+Task\ label=Rattus_27_beast
+Task\ ID=1158111
+Tool=BEAST2_XSEDE
+created\ on=2017-04-15 09:42:09.0
+JobHandle=NGBW-JOB-BEAST2_XSEDE-0CF82FF3B30C4B29BB673EF25580F50D
+resource=comet
+User\ ID=97256
+User\ Name=sunda_miguel
+email=miguelcamachosanchez@gmail.com
+
+Output=(all_results,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=4
+JOBID=8737618

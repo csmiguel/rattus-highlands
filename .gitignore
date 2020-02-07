@@ -4,6 +4,7 @@
 
 /*/
 
+#####Selection analysis#######
 !selection_analysis
 selection_analysis/*
 !selection_analysis/lrt.r
@@ -35,6 +36,26 @@ selection_analysis/1ind_per_lineage/*
 !selection_analysis/1ind_per_lineage/tree_paml.txt
 !selection_analysis/1ind_per_lineage/output
 selection_analysis/1ind_per_lineage/output/BS*
+
+#####phylogenetic-analysis#######
+!phylogenetic_analysis
+phylogenetic_analysis/*
+!phylogenetic_analysis/Beast
+phylogenetic_analysis/Beast/*
+!phylogenetic_analysis/Beast/27_rattus_consensus.tre
+!phylogenetic_analysis/Beast/27_mito_Rattus.xml
+!phylogenetic_analysis/Beast/PartitionFinder
+phylogenetic_analysis/Beast/PartitionFinder/*
+!phylogenetic_analysis/Beast/PartitionFinder/27_mito_Rattus.phy
+!phylogenetic_analysis/Beast/PartitionFinder/partition_finder.cfg
+!phylogenetic_analysis/Beast/PartitionFinder/analysis
+phylogenetic_analysis/Beast/PartitionFinder/analysis/*
+!phylogenetic_analysis/Beast/PartitionFinder/analysis/best_scheme.txt
+!phylogenetic_analysis/Beast/run1_cipress
+!phylogenetic_analysis/Beast/run2_cipress
+
+
+
 
 !README.md
 *DS_store
