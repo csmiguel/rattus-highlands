@@ -4,20 +4,25 @@ Phylogeography of *Rattus* native to Sundaland based on complete mitochondrial g
 
 This repository contains supplementary data and results on the analysis of the manuscript:
 
-<font size="14">Miguel Camacho-Sanchez, Jennifer Leonard (2020) Mitogenomes reveal multiple colonization of mountains by *Rattus* in Sundaland. In review.</font>
+<font size="16">Miguel Camacho-Sanchez, Jennifer Leonard (2020) Mitogenomes reveal multiple colonization of mountains by *Rattus* in Sundaland. In review.</font>
+
+### mitogenome assembly
+
+General description [here](mitogenome-assembly.txt).
 
 ### DNA sequences
 
 Mitochondrial genomes have been deposited in GenBank under accession numbers:
 
-* *R. hoogerwerfi* (ANSP 20319): [MN126561](https://www.genbank.com)
-* *R. korinchi* (BM 19.11.5.81): [MN126567](https://wwwgenbank.com)
-* *R. korinchi* (RMNH 23151): [MN126568](https://wwwgenbank.com)
-* R. R3 (NH 2147): [MN126565](https://www.genbank.com)
-* *R. tanezumi* (BOR260): [MN126566](https://www.genbank.com)
-* *R. tiomanicus* (NH 2015): [MN126562](https://www.genbank.com)
-* *R. tiomanicus* (USNM 590332): [MN126563](https://www.genbank.com)
-* *R. tiomanicus* (USNM 590720): [MN126564](https://www.genbank.com)
+* *R. exulans* BOR577: [MN126569](https://www.genbank.com)
+* *R. hoogerwerfi* ANSP 20319: [MN126561](https://www.genbank.com)
+* *R. korinchi* BM 19.11.5.81: [MN126567](https://wwwgenbank.com)
+* *R. korinchi* RMNH 23151: [MN126568](https://wwwgenbank.com)
+* R. R3 NH 2147: [MN126565](https://www.genbank.com)
+* *R. tanezumi* BOR260: [MN126566](https://www.genbank.com)
+* *R. tiomanicus* NH 2015: [MN126562](https://www.genbank.com)
+* *R. tiomanicus* USNM 590332: [MN126563](https://www.genbank.com)
+* *R. tiomanicus* USNM 590720: [MN126564](https://www.genbank.com)
 
 ### phylogenetic analysis
 
@@ -26,6 +31,10 @@ Phylogenetic reconstructions in a Maximum Likelihood framework (RAxML) and dated
 BEAST: the repository includes [data](phylogenetic_analysis/Beast/PartitionFinder) from analysis in PartitionFinder, [xml file](phylogenetic_analysis/Beast/27_mito_Rattus.xml) from BEAUti, runs [1](phylogenetic_analysis/Beast/run1_cipress) and [2](phylogenetic_analysis/Beast/run2_cipress), and [consensus tree](phylogenetic_analysis/Beast/27_rattus_consensus.tre).
 
 RAxML: the repository includes [data](phylogenetic_analysis/RAxML/PartitionFinder) from analysis in PartitionFinder, [input alignment](phylogenetic_analysis/RAxML/raxml/mito_all_cds.phy) for RAxML with its [partitions](phylogenetic_analysis/RAxML/raxml/partitions.txt) and resulting [trees](phylogenetic_analysis/RAxML/raxml).
+
+```
+raxmlHPC-PTHREADS-SSE3 -f a -m GTRGAMMA -q phylogenetic_analysis/RAxML/raxml/partitions.txt -p $RANDOM -x $RANDOM -# autoMRE -s phylogenetic_analysis/RAxML/raxml/mito_all_cds.phy -n Rattus_mitogenomes_raxml -T 10
+```
 
 ### haplotype network
 
@@ -42,3 +51,7 @@ I have included 3 analysis to test if the background dN/dS in the tree is differ
 * 3. [Per gene analysis: full dataset (n = 56)](selection_analysis/1ind_per_lineage/concatenated)
 
 Sample BM19.11.5.81 was excluded from the full dataset because due to its large amounts of missing data I was loosing around 10% of the positions in the alignment for the selection analysis in codeml.
+
+### ancestral distribution
+
+The 

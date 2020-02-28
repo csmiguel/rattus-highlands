@@ -1,0 +1,145 @@
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR209 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR210 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR212 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR223 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR529 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR533 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR216 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR230 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR362 and Rattus_baluensis_BOR384 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR362 and Rattus_baluensis_BOR391 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR348 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR383 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR398 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR399 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR548 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR519 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR540 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR532 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR528 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_tiomanicus_JF436986 and Rattus_tiomanicus_JF436975 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_pyctoris_JN675511 and Rattus_pyctoris_JN675512 are exactly identical
+
+IMPORTANT WARNING
+Found 21 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+An alignment file with sequence duplicates removed has already
+been printed to file ancestral_states/mito_cds_cytb.phy.reduced
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+Found a total of 57 taxa in tree file ancestral_states/RAxML_result.PARAMS
+
+
+This is RAxML version 8.2.11 released by Alexandros Stamatakis on June 2017.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 3417 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 35.97%
+
+RAxML likelihood-based placement algorithm
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+Partition: 0
+Alignment Patterns: 3417
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-SSE3 -f v -R ancestral_states/RAxML_binaryModelParameters.PARAMS -t ancestral_states/RAxML_result.PARAMS -s ancestral_states/mito_cds_cytb.phy -m GTRGAMMA -n addcytb -w /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/ancestral_states/ 
+
+
+
+RAxML is reading a binary model file and not optimizing model params
+RAxML placement algorithm: You provided a reference tree with 57 taxa; alignmnet has 93 taxa
+36 query taxa will be placed using maximum likelihood
+
+RAxML Evolutionary Placement Algorithm
+
+Likelihood of reference tree: -66964.304862
+
+RAxML will place 36 Query Sequences into the 111 branches of the reference tree with 57 taxa
+
+Overall Classification time: 37.568326
+
+
+
+Labelled reference tree including branch labels and query sequences written to file: /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/ancestral_states/RAxML_labelledTree.addcytb
+
+Labelled reference tree with branch labels (without query sequences) written to file: /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/ancestral_states/RAxML_originalLabelledTree.addcytb
+
+Labelled reference tree with branch labels in portable pplacer/EPA format (without query sequences) written to file: /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/ancestral_states/RAxML_portableTree.addcytb.jplace
+
+Classification result file written to file: /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/ancestral_states/RAxML_classification.addcytb
+
+Classification result file using likelihood weights written to file: /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/ancestral_states/RAxML_classificationLikelihoodWeights.addcytb
+
+Classification entropy result file using likelihood weights written to file: /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/ancestral_states/RAxML_entropy.addcytb
+

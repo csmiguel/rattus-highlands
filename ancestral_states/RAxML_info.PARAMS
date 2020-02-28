@@ -1,0 +1,141 @@
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR348 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR383 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR398 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR343 and Rattus_baluensis_BOR399 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR362 and Rattus_baluensis_BOR384 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR362 and Rattus_baluensis_BOR391 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR209 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR210 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR212 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR223 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR529 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR533 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR216 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR201 and Rattus_baluensis_BOR230 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR548 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR519 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR540 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR532 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Rattus_baluensis_BOR207 and Rattus_baluensis_BOR528 are exactly identical
+
+IMPORTANT WARNING
+Found 19 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates removed is printed to file ancestral_states/mito_all_cds.phy.reduced
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.11 released by Alexandros Stamatakis on June 2017.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 3095 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.11%
+
+RAxML Model Optimization up to an accuracy of 0.100000 log likelihood units
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 3095
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+/Users/miguelcamacho/miniconda3/pkgs/raxml-8.2.11-hab3343f_0/bin/ete3_apps/bin/raxmlHPC-SSE3 -f e -m GTRGAMMA -s ancestral_states/mito_all_cds.phy -t ancestral_states/raxml.tre -n PARAMS -T 1 
+
+
+
+Model parameters (binary file format) written to: /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/RAxML_binaryModelParameters.PARAMS
+
+
+Overall Time for Tree Evaluation 7.688026
+Final GAMMA  likelihood: -66964.304862
+
+Number of free parameters for AIC-TEST(BR-LEN): 120
+Number of free parameters for AIC-TEST(NO-BR-LEN): 9
+
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.194224
+Tree-Length: 1.368619
+rate A <-> C: 1.654669
+rate A <-> G: 18.917045
+rate A <-> T: 1.290986
+rate C <-> G: 0.205012
+rate C <-> T: 22.173923
+rate G <-> T: 1.000000
+
+freq pi(A): 0.319156
+freq pi(C): 0.267015
+freq pi(G): 0.122182
+freq pi(T): 0.291647
+
+Final tree written to:                 /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/RAxML_result.PARAMS
+Execution Log File written to:         /Users/miguelcamacho/Dropbox/Research/Tesis/Projects/ongoing_projects/Rattus_highlands/RAxML_log.PARAMS

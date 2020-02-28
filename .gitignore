@@ -3,6 +3,7 @@
 /*
 
 /*/
+!mitogenome-assembly.txt
 
 #####Selection analysis#######
 !selection_analysis
@@ -75,6 +76,11 @@ phylogenetic_analysis/RAxML/raxml/*
 #haplotype networks
 !haplotype_networks
 
+#####ancestry-analysis#######
+!ancestral_states
+ancestral_states/*pdf
+ancestral_states/*nex
 
+#####
 !README.md
 *DS_store

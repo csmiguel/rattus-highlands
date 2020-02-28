@@ -1,0 +1,19 @@
+#Commands used for assembling mitochondrial genomes:
+
+#trim illumina adapters, relaxed filter for quality to the 3' end (-q 10) and discard short reads (< 30 nt).
+cutadapt -a AGATCGGAAGAGC -A AGATCGGAAGAGC -e 0.16 -m 30 -q 10 -o xx.R1.cutadapt.fastq -p xx.R2.cutadapt.fastq xx.R1.fastq xx.R2.fastq
+
+#pair R1 and R2. This is not a necessary step as  mapping algorithms already take into account the orientation and expected insert for mapping. In fact, it is not recommended for SNP calling. However, I did it because of the way I call consensus sequences.
+pear -f xx.R1.cutadapt.fastq -r xx.R2.cutadapt.fastq -o any.fastq
+
+#concatenate files:
+cat *.assembled.fastq *.unassembled.forward.fastq *.unassembled.reverse.fastq > xx.cutadapt.pear.fastq
+
+#mapping. We mapped the reads from each sample to the circularized mitogenomes of R. baluensis (KY611361) and R. exulans KJ530564 (for R. exulans BOR577 only), in Geneious 8 using default parameters and 3 iterations.
+
+#remove pcr duplicates with samtools.
+#samtools produces an error when trying to determine pcr duplicates in BAM files that do not have the library information ("LB") in the header (as those exported from Geneious). It makes sense because same samples ("SM") can have been amplified in different libraries, thus not sharing pcr duplicates. So, I have to add manually any "LB" to the headers of the BAM files with samtools addreplacerg.
+
+samtools sort xx.bam -o xx.sorted.bam
+samtools rmdup -s xx.sorted.bam xx.rmdup.bam
+
