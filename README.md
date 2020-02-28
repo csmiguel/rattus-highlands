@@ -16,8 +16,8 @@ Mitochondrial genomes have been deposited in GenBank under accession numbers:
 
 * *R. exulans* BOR577: [MN126569](https://www.genbank.com)
 * *R. hoogerwerfi* ANSP 20319: [MN126561](https://www.genbank.com)
-* *R. korinchi* BM 19.11.5.81: [MN126567](https://wwwgenbank.com)
-* *R. korinchi* RMNH 23151: [MN126568](https://wwwgenbank.com)
+* *R. korinchi* BM 19.11.5.81: [MN126567](https://www.genbank.com)
+* *R. korinchi* RMNH 23151: [MN126568](https://www.genbank.com)
 * R. R3 NH 2147: [MN126565](https://www.genbank.com)
 * *R. tanezumi* BOR260: [MN126566](https://www.genbank.com)
 * *R. tiomanicus* NH 2015: [MN126562](https://www.genbank.com)
@@ -40,6 +40,9 @@ raxmlHPC-PTHREADS-SSE3 -f a -m GTRGAMMA -q phylogenetic_analysis/RAxML/raxml/par
 
 The [DNA alignment](haplotype_networks/network_matrix.nex) of *cytochrome b* to reconstruct the haplotype network within the *R. tiomanicus* group (*R. tiomanicus* + *R. baluensis*).
 
+### ancestral distribution
+
+The [ancestral distribution](ancestral_states/) of the lineages was evaluated with `phytools::rerootingMethod`. *Cyt b* sequences from other species of *Rattus* were added to the [RAxML tree](phylogenetic_analysis/RAxML/raxml) using an Evolutionary Placement Algorithm. [Matset et al. 2012](https://doi.org/10.1371/journal.pone.0031009) explain the interpretation of the raw [results](ancestral_states/RAxML_portableTree.addcytb.jplace). Analysis are done running scripts sequentially 1 to 5.
 
 ### selection analysis
 
@@ -51,7 +54,3 @@ I have included 3 analysis to test if the background dN/dS in the tree is differ
 * 3. [Per gene analysis: full dataset (n = 56)](selection_analysis/1ind_per_lineage/concatenated)
 
 Sample BM19.11.5.81 was excluded from the full dataset because due to its large amounts of missing data I was loosing around 10% of the positions in the alignment for the selection analysis in codeml.
-
-### ancestral distribution
-
-The 
