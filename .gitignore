@@ -25,7 +25,7 @@ selection_analysis/fulldata/partitioned/*
 !selection_analysis/fulldata/partitioned/tree_paml.txt
 !selection_analysis/fulldata/partitioned/partition.txt
 !selection_analysis/fulldata/partitioned/gene_order
-!selection_analysis/fulldata/partitioned/marked_tree_paml.txt
+!selection_analysis/fulldata/partitioned/marked_tree_paml*
 !selection_analysis/fulldata/partitioned/output
 
 !selection_analysis/1ind_per_lineage

@@ -91,7 +91,10 @@ lrt <-
   p <- pchisq(lrt, df = dfree, lower.tail=FALSE) # p-value
   H0 <- x$rn %>% grep(pattern = "[aA-zZ]0", value = T) # null hypothesis
   H1 <- x$rn %>% grep(pattern = "[aA-zZ]0", value = T, invert = T) # alternative hypothesis
-  data.frame(LRT = round(lrt, 3), dfree = dfree, p = round(p, 3), H0 = H0, H1 = H1)
+  lnl_m0 <- x$lnl[1]
+  lnl_m1 <- x$lnl[2]
+  data.frame(LRT = round(lrt, 3), dfree = dfree, p = round(p, 3),
+    H0 = H0, H1 = H1, lnl_m0 = lnl_m0, lnl_m1 = lnl_m1)
 }) %>%
   #arrange by hypothesis
   dplyr::mutate(temp = stringr::str_replace(string = H, "t", "") %>%
@@ -133,11 +136,16 @@ lrt_omega <-
   reshape2::melt(id = "H") %>%
   dplyr::mutate(order = stringr::str_replace(H, "t", "") %>% as.numeric()) %>%
   dplyr::select(-variable) %>%
-  left_join(x = omegas, by = c("dataset" = "value")) %>%
+  dplyr::left_join(x = omegas, by = c("dataset" = "value")) %>%
   dplyr::arrange(order, dataset) %>%
   dplyr::left_join(lrt, by = c("H" = "H")) %>%
   dplyr::rename(gene = new) %>%
-  dplyr::select(-H0, -H1, -order)
+  dplyr::select(-H0, -H1, -order) %>%
+  dplyr::mutate(lnl = ifelse(
+                grepl(pattern = "M0|b0", x = dataset),
+                yes = lnl_m0,
+                no = lnl_m1)) %>%
+  dplyr::select(-lnl_m0, -lnl_m1)
 
 lrt_omega[lrt_omega == -999] <- "-"
 
@@ -149,14 +157,48 @@ lrt_omega[lrt_omega == -999] <- "-"
   dplyr::mutate(nt = endg - startg + 1) %>%
   dplyr::select(V1, nt) %>%
   dplyr::rename(gene = V1)
-  
+
 #join genes to df
 lrt_omega_gene <-
   dplyr::left_join(lrt_omega, gene_nt, by = "gene") %>%
-  dplyr::select(gene, w0, w1, w2, LRT, dfree, p, nt)
+  dplyr::select(gene, w0, w1, w2, lnl, LRT, dfree, p, nt)
 
 
 #write table
-write.csv(lrt_omega_gene, "selection.txt")
+write.csv(lrt_omega_gene, "selection_branch_model.txt")
 
+###Results on branch-site models
 
+path_ma0 <- "fulldata/partitioned/output/Ma0"
+path_ma1 <- "fulldata/partitioned/output/Ma1"
+
+temp <-
+  c(path_ma0, path_ma1) %>%
+  lapply(lnl_df) %>% #return df and lnL for each output
+  do.call(what = rbind) %>% # bind results
+  dplyr::mutate(H = paste0("t", rep(1:13, 2))) %>%
+  dplyr::as_tibble() %>%
+  dplyr::mutate(H = as.factor(H))
+
+lrt_bs <-
+  plyr::ddply(temp, ~H, function(x){
+    assertthat::assert_that(nrow(x) == 2) #assert it is a pairwise comparison
+    lrt <- abs(2 * (x$lnl[1] - x$lnl[2])) # LRT
+    dfree <- abs(x$df[1] - x$df[2]) # degrees of freedom
+    p <- pchisq(lrt, df = dfree, lower.tail = F) # p-value
+    lnl_m0 <- x$lnl[1]
+    lnl_m1 <- x$lnl[2]
+    data.frame(LRT = round(lrt, 3), dfree = dfree,
+               p = round(p, 3), lnl_m0 = lnl_m0, lnl_m1 = lnl_m1)
+  }) %>%
+  #arrange by hypothesis
+  dplyr::mutate(temp = stringr::str_replace(string = H, "t", "") %>%
+                  as.numeric()) %>%
+  dplyr::arrange(temp) %>%
+  dplyr::select(-temp, -H) %>%
+  dplyr::mutate(gene = genes,
+                p = p / 2) %>% #according to Yang and Reis 2011
+  dplyr::select(gene, dfree, lnl_m0, lnl_m1, LRT, p)
+
+  #write table
+  write.csv(lrt_bs, "selection_branch-site_model.txt")
