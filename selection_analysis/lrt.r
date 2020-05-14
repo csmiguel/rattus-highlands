@@ -202,3 +202,37 @@ lrt_bs <-
 
   #write table
   write.csv(lrt_bs, "selection_branch-site_model.txt")
+
+#plot Branch model
+
+library(ggplot2)
+plotw <-
+  dplyr::left_join(lrt_omega, gene_nt, by = "gene") %>%
+  dplyr::select(dataset, gene, w0, w1, w2, p) %>%
+  dplyr::filter(gene != "b0") %>%
+  dplyr::mutate(test = ifelse(gene == "concatM0",
+                              yes = "concat",
+                              no = "pergene"),
+                h = ifelse(grepl(pattern = "M0", x = dataset),
+                           yes = "h0",
+                           no = "h1")) %>%
+  dplyr::select(-dataset) %>%
+  reshape2::melt(id = c("gene", "p", "h", "test")) %>%
+  dplyr::arrange(test, gene) %>%
+  dplyr::filter(value != "-") %>%
+  dplyr::mutate(value = as.numeric(value)) %>%
+  tibble::as.tibble()
+plotw
+plotw %>%
+  dplyr::filter(test == "pergene" & h == "h1") %>%
+  ggplot() +
+  geom_point(aes(x = gene, y = value, color = variable), size = 2) +
+  scale_color_manual(values = c("black", "red", "blue")) +
+  ylab("dN/dS") +
+  theme_classic() +
+  geom_hline(data = dplyr::filter(plotw, test == "concat"),
+             aes(yintercept = value, color = variable)) +
+  geom_point(data = dplyr::filter(plotw, test == "pergene" & h == "h0"),
+             aes(x = gene, y = value), size = 3, shape = 0, color = "black")
+
+ggsave("w_plot.pdf", width = 6, height = 3)
