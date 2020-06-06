@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3883085.svg)](https://doi.org/10.5281/zenodo.3883085)
+
 # *Rattus* phylogeography in Sundaland
 
 Phylogeography of *Rattus* native to Sundaland based on complete mitochondrial genomes. We determine the phylogenetic position of mountain species from Borneo (*R. baluensis*) and Sumatra (*R. korinchi* and *R. hoogerwerfi*), with ML trees, date the divergence, evaluate selection in the mitochondrial protein-coding genes and test for morphological convergence.
