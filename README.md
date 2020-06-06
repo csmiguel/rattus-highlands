@@ -1,10 +1,10 @@
-# *Rattus* Phylogeography in Sundaland
+# *Rattus* phylogeography in Sundaland
 
 Phylogeography of *Rattus* native to Sundaland based on complete mitochondrial genomes. We determine the phylogenetic position of mountain species from Borneo (*R. baluensis*) and Sumatra (*R. korinchi* and *R. hoogerwerfi*), with ML trees, date the divergence, evaluate selection in the mitochondrial protein-coding genes and test for morphological convergence.
 
 This repository contains supplementary data, results and analysis on:
 
-<font size="16">Miguel Camacho-Sanchez, Jennifer Leonard (2020) Mitogenomes reveal multiple colonization of mountains by *Rattus* in Sundaland. [10.1093/jhered/esaa014](https://doi.org/10.1093/jhered/esaa014).</font>
+Miguel Camacho-Sanchez, Jennifer Leonard (2020) **Mitogenomes reveal multiple colonization of mountains by *Rattus* in Sundaland**. *Journal of Heredity*.[10.1093/jhered/esaa014](https://doi.org/10.1093/jhered/esaa014)
 
 ### mitogenome assembly
 
