@@ -67,7 +67,7 @@ ancestral_reconstruction <- function(tr = NULL, plotname, sizze = 4, fsizze = .8
   #plot results
   pdf(file = paste0(plotname, ".pdf"), width = sizze, height = sizze*1.3)
   plotTree(tr_rooted, setEnv = TRUE, offset = 0.5, fsize = fsizze)
-  mycols <- c("blue", "red", "yellow", "green",grey.colors(10))[1:ncol(fitER$x)]
+  mycols <- c(grey(0.6), grey(0.99), grey(0.1), grey(0.25))
   nodelabels(node = as.numeric(rownames(fitER$marginal.anc)),
              pie = fitER$marginal.anc,
              piecol = mycols,
@@ -76,5 +76,5 @@ ancestral_reconstruction <- function(tr = NULL, plotname, sizze = 4, fsizze = .8
             piecol = mycols,
             cex = .5)
   dev.off()
-  ape::write.tree(phy = tr_rooted, file = paste0(plotname, ".nex"))
+  #ape::write.tree(phy = tr_rooted, file = paste0(plotname, ".nex"))
 }

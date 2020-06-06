@@ -1,10 +1,10 @@
-# Phylogeography of *Rattus* in Sundaland
+# *Rattus* Phylogeography in Sundaland
 
-Phylogeography of *Rattus* native to Sundaland based on complete mitochondrial genomes. We determine the phylogenetic position of mountain species from Borneo (*R. baluensis*) and Sumatra (*R. korinci* and *R. hoogerwerfi*), with ML trees, date the divergence, evaluate selection in the mitochondrial protein-coding genes and test for morphological convergence.
+Phylogeography of *Rattus* native to Sundaland based on complete mitochondrial genomes. We determine the phylogenetic position of mountain species from Borneo (*R. baluensis*) and Sumatra (*R. korinchi* and *R. hoogerwerfi*), with ML trees, date the divergence, evaluate selection in the mitochondrial protein-coding genes and test for morphological convergence.
 
-This repository contains supplementary data and results on the analysis of the manuscript:
+This repository contains supplementary data, results and analysis on:
 
-<font size="16">Miguel Camacho-Sanchez, Jennifer Leonard (2020) Mitogenomes reveal multiple colonization of mountains by *Rattus* in Sundaland. In review.</font>
+<font size="16">Miguel Camacho-Sanchez, Jennifer Leonard (2020) Mitogenomes reveal multiple colonization of mountains by *Rattus* in Sundaland. [10.1093/jhered/esaa014](https://doi.org/10.1093/jhered/esaa014).</font>
 
 ### mitogenome assembly
 
@@ -14,15 +14,15 @@ General description [here](mitogenome-assembly.txt).
 
 Mitochondrial genomes have been deposited in GenBank under accession numbers:
 
-* *R. exulans* BOR577: [MN126569](https://www.genbank.com)
-* *R. hoogerwerfi* ANSP 20319: [MN126561](https://www.genbank.com)
-* *R. korinchi* BM 19.11.5.81: [MN126567](https://www.genbank.com)
-* *R. korinchi* RMNH 23151: [MN126568](https://www.genbank.com)
-* R. R3 NH 2147: [MN126565](https://www.genbank.com)
-* *R. tanezumi* BOR260: [MN126566](https://www.genbank.com)
-* *R. tiomanicus* NH 2015: [MN126562](https://www.genbank.com)
-* *R. tiomanicus* USNM 590332: [MN126563](https://www.genbank.com)
-* *R. tiomanicus* USNM 590720: [MN126564](https://www.genbank.com)
+* *R. exulans* BOR577: [MN126569](https://www.ncbi.nlm.nih.gov/nuccore/MN126569)
+* *R. hoogerwerfi* ANSP 20319: [MN126561](https://www.ncbi.nlm.nih.gov/nuccore/MN126561)
+* *R. korinchi* BM 19.11.5.81: [MN126567](https://www.ncbi.nlm.nih.gov/nuccore/MN126567)
+* *R. korinchi* RMNH 23151: [MN126568](https://www.ncbi.nlm.nih.gov/nuccore/MN126568)
+* R. R3 NH 2147: [MN126565](https://www.ncbi.nlm.nih.gov/nuccore/MN126565)
+* *R. tanezumi* BOR260: [MN126566](https://www.ncbi.nlm.nih.gov/nuccore/MN126566)
+* *R. tiomanicus* NH 2015: [MN126562](https://www.ncbi.nlm.nih.gov/nuccore/MN126562)
+* *R. tiomanicus* USNM 590332: [MN126563](https://www.ncbi.nlm.nih.gov/nuccore/MN126563)
+* *R. tiomanicus* USNM 590720: [MN126564](https://www.ncbi.nlm.nih.gov/nuccore/MN126564)
 
 ### phylogenetic analysis
 
